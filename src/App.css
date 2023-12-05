@@ -1,0 +1,266 @@
+/* App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  padding-top: 50px;
+  color: #fff;
+  text-align: center;
+  font-size: 2.5em;
+  line-height: 30px;
+  font-size: 32px;
+}
+
+h3 {
+  text-align: left;
+  font-weight: 300;
+  font-size: smaller;
+
+}
+
+
+h5 {
+  color: #888;
+  text-align: center;
+  font-weight: 300;
+}
+
+h6 {
+  color: #76B689;
+  font-size: larger;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* StateList.css */
+
+.state-list {
+  text-align: center;
+  padding: 20px;
+}
+
+.state-cards-container {
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+
+.state-card {
+  background-color: #333;
+  border-radius: 8px;
+  margin: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.state-card:hover {
+  background-color: #555;
+}
+
+.state-card-content {
+  padding: 20px;
+}
+
+h2 {
+  color: #fff;
+  margin: 0;
+}
+
+
+/* LegislatorCard.css */
+
+.legislator-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  max-width: 300px;
+  min-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #161616;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  h2 {
+    margin-bottom: 8px;
+  }
+
+
+  p {
+    margin: 6px 0;
+  }
+}
+
+h3 {
+  font-size: 14px;
+}
+
+
+
+/* LegislatorList.css */
+
+.legislator-list-container {
+  padding: 20px;
+}
+
+.legislator-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  padding-bottom: 50px;
+}
+
+
+/* PersonalFinanceCard.css */
+
+.personal-finance-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.sub-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.notice {
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.donors-list {
+  list-style: none;
+  padding: 0;
+}
+
+.donor-item {
+  margin-bottom: 15px;
+}
+
+.close-button {
+  background-color: #2f2f2f;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 2.5px;
+  font-size: 18px;
+}
+
+.close-button:hover {
+  background-color: #373737;
+}
+
+
+donorTotal {
+  color: #88a993;
+  font-weight: 800;
+}
+
+donorName {
+  font-size: 24px;
+  line-height: 40px;
+}
+
+contribution {
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 10px;
+}
+
+donorDetails {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+
+/* PersonalFinanceCard.css */
+
+.personal-finance-drawer {
+  position: fixed;
+  top: 0;
+  right: -300px; /* Initially off-screen */
+  height: 100%;
+  width: 600px;
+  background-color: #1a1a1a;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  z-index: 1000;
+  transition: right 0.3s ease-out;
+}
+
+.personal-finance-drawer.open {
+  right: 0; /* Slide in when open */
+}
+
+.drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #141414;
+  color: #fff;
+}
+
+.drawer-content {
+  padding: 20px;
+}
+
+.close-button {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: none;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: #2e2e2e;
+}
+
+/* Add your existing styling for card-title, sub-title, notice, donors-list, donor-item, etc. */
+
